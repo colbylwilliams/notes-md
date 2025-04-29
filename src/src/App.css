@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.editor-container {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  height: calc(100vh - 150px);
+}
+
+.editor-section, 
+.preview-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.editor-section h2, 
+.preview-section h2 {
+  background-color: #f8fafc;
+  padding: 0.75rem;
+  margin: 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.markdown-editor {
+  flex: 1;
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: #f8fafc;
+}
+
+.markdown-preview {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: white;
+  text-align: left;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3 {
+  color: #2c3e50;
+}
+
+.markdown-preview p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+.markdown-preview pre {
+  background-color: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+.markdown-preview code {
+  font-family: monospace;
+  background-color: #f1f5f9;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .editor-section, 
+  .preview-section {
+    height: 50vh;
+  }
+}
