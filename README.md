@@ -45,6 +45,8 @@ A Markdown Notes web application for creating and editing notes in Markdown form
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint
 - `npm run preview` - Preview the production build locally
+- `npm test` - Run tests
+- `npm run test:watch` - Run tests in watch mode (automatically re-runs on file changes)
 
 ## Expanding the ESLint configuration
 
