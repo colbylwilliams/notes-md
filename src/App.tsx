@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import './styles/App.css'
+import { ThemeToggle } from './components/ThemeToggle'
 
 function App() {
   const [note, setNote] = useState<string>('# Welcome to Notes MD\n\nStart typing your markdown here...')
@@ -10,6 +11,7 @@ function App() {
     <div className="app-container">
       <header className="app-header">
         <h1>Notes MD</h1>
+        <ThemeToggle />
       </header>
       <main className="content">
         <div className="editor-pane">
