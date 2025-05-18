@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+defaults:
+  run:
+    working-directory: src
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,13 +28,13 @@ jobs:
           cache-dependency-path: 'src/package-lock.json'
           
       - name: Install dependencies
-        run: cd src && npm ci
+        run: npm ci
         
       - name: Lint
-        run: cd src && npm run lint
+        run: npm run lint
         
       - name: Build
-        run: cd src && npm run build
+        run: npm run build
         
       - name: Test
-        run: cd src && npm run test
+        run: npm run test
