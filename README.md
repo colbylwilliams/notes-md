@@ -55,19 +55,6 @@ A web application for taking and managing notes in Markdown format.
 npm run build
 ```
 
-## Continuous Integration
-
-This project uses GitHub Actions for continuous integration. The CI pipeline:
-
-- Runs on every push to the `main` branch and all pull requests
-- Tests against Node.js 18.x and 20.x
-- Installs dependencies
-- Runs linting checks
-- Builds the application
-- Runs tests (placeholder for now)
-
-To add actual tests to the project, you can set up a testing framework like Vitest or Jest and modify the `test` script in `package.json`.
-
 ## Usage
 
 - Click the '+' button to create a new note
