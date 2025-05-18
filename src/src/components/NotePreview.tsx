@@ -1,6 +1,6 @@
 import { Paper, Box } from '@mui/material';
 import MarkdownPreview from '@uiw/react-markdown-preview';
-import type { Note } from '../types';
+import type { Note } from '../services/notes/types';
 
 interface NotePreviewProps {
   note: Note | null;

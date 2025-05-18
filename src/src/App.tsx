@@ -4,8 +4,8 @@ import './App.css'
 import NoteList from './components/NoteList'
 import NoteEditor from './components/NoteEditor'
 import NotePreview from './components/NotePreview'
-import type { Note } from './types'
-import { v4 as uuidv4 } from 'uuid'
+import type { Note } from './services/notes/types'
+import { notesService } from './services/notes/index'
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([]);
@@ -18,57 +18,32 @@ function App() {
     },
   });
 
-  // Load notes from localStorage on initial render
+  // Load notes on initial render
   useEffect(() => {
-    const savedNotes = localStorage.getItem('notes');
-    if (savedNotes) {
-      try {
-        const parsedNotes = JSON.parse(savedNotes);
-        // Convert string dates back to Date objects
-        const formattedNotes = parsedNotes.map((note: any) => ({
-          ...note,
-          createdAt: new Date(note.createdAt),
-          updatedAt: new Date(note.updatedAt),
-        }));
-        setNotes(formattedNotes);
-        
-        // Set the first note as selected if available
-        if (formattedNotes.length > 0) {
-          setSelectedNoteId(formattedNotes[0].id);
-        }
-      } catch (error) {
-        console.error('Error parsing saved notes:', error);
-      }
+    const allNotes = notesService.getAllNotes();
+    setNotes(allNotes);
+    
+    // Set the first note as selected if available
+    if (allNotes.length > 0) {
+      setSelectedNoteId(allNotes[0].id);
     }
   }, []);
 
-  // Save notes to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem('notes', JSON.stringify(notes));
-  }, [notes]);
-
   const handleAddNote = () => {
-    const now = new Date();
-    const newNote: Note = {
-      id: uuidv4(),
-      title: 'Untitled Note',
-      content: '# Untitled Note\n\nStart writing your note here...',
-      createdAt: now,
-      updatedAt: now
-    };
-    
-    setNotes([newNote, ...notes]);
+    const newNote = notesService.addNote();
+    setNotes(notesService.getAllNotes());
     setSelectedNoteId(newNote.id);
   };
 
   const handleDeleteNote = (noteId: string) => {
-    const newNotes = notes.filter(note => note.id !== noteId);
-    setNotes(newNotes);
+    notesService.deleteNote(noteId);
+    const updatedNotes = notesService.getAllNotes();
+    setNotes(updatedNotes);
     
     // If we deleted the selected note, select the first note if available
     if (selectedNoteId === noteId) {
-      if (newNotes.length > 0) {
-        setSelectedNoteId(newNotes[0].id);
+      if (updatedNotes.length > 0) {
+        setSelectedNoteId(updatedNotes[0].id);
       } else {
         setSelectedNoteId(null);
       }
@@ -76,10 +51,8 @@ function App() {
   };
 
   const handleNoteChange = (updatedNote: Note) => {
-    const newNotes = notes.map(note => 
-      note.id === updatedNote.id ? updatedNote : note
-    );
-    setNotes(newNotes);
+    notesService.updateNote(updatedNote);
+    setNotes(notesService.getAllNotes());
   };
 
   const selectedNote = notes.find(note => note.id === selectedNoteId) || null;

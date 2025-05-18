@@ -1,7 +1,7 @@
 import { List, ListItem, ListItemButton, ListItemText, Paper, Typography, IconButton, Box } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
-import type { Note } from '../types';
+import type { Note } from '../services/notes/types';
 
 interface NoteListProps {
   notes: Note[];

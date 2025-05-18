@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { TextField, Paper, Box } from '@mui/material';
-import type { Note } from '../types';
+import type { Note } from '../services/notes/types';
 
 interface NoteEditorProps {
   note: Note | null;
