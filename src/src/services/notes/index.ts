@@ -19,7 +19,7 @@ export class NotesService {
       try {
         const parsedNotes = JSON.parse(savedNotes);
         // Convert string dates back to Date objects
-        this.notes = parsedNotes.map((note: any) => ({
+        this.notes = parsedNotes.map((note: {id: string; title: string; content: string; createdAt: string; updatedAt: string}) => ({
           ...note,
           createdAt: new Date(note.createdAt),
           updatedAt: new Date(note.updatedAt),
