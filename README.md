@@ -42,12 +42,18 @@ A web application for taking and managing notes in Markdown format.
    npm install
    ```
 
-3. Start the development server
+3. Configure environment variables (optional)
+   ```
+   cp .env.example .env
+   ```
+   Modify the `.env` file with your specific configuration.
+
+4. Start the development server
    ```
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:5173`
 
 ### Building for Production
 
@@ -62,6 +68,22 @@ npm run build
 - Write your markdown in the editor
 - See the rendered preview in real-time on the right panel
 - Use '# Title' at the beginning of your note to set its title
+
+## Environment Variables
+
+Notes MD supports configuration via environment variables using `.env` files. You can create a `.env` file in the project root to customize your development environment.
+
+Example variables can be found in the `.env.example` file:
+
+| Variable | Description |
+| --- | --- |
+| `VITE_API_URL` | Base URL for API endpoints |
+| `VITE_ENABLE_DARK_MODE_BY_DEFAULT` | Set to 'true' to enable dark mode by default |
+| `VITE_ENABLE_AUTOSAVE` | Enable/disable autosave functionality |
+| `VITE_APP_TITLE` | Application title |
+| `VITE_AUTOSAVE_INTERVAL` | Time interval for autosave in milliseconds |
+
+**Note:** Only variables prefixed with `VITE_` will be exposed to your client-side code.
 
 ## License
 

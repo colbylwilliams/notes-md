@@ -8,9 +8,13 @@ import type { Note } from './services/notes/types'
 import { notesService } from './services/notes/index'
 
 function App() {
+  // Use environment variable for default dark mode if available, otherwise default to false
+  const defaultDarkMode = import.meta.env.VITE_ENABLE_DARK_MODE_BY_DEFAULT === 'true';
+  const appTitle = import.meta.env.VITE_APP_TITLE || 'Notes MD';
+  
   const [notes, setNotes] = useState<Note[]>([]);
   const [selectedNoteId, setSelectedNoteId] = useState<string | null>(null);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(defaultDarkMode);
 
   const theme = createTheme({
     palette: {
@@ -64,7 +68,7 @@ function App() {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Notes MD
+              {appTitle}
             </Typography>
             <FormControlLabel
               control={
