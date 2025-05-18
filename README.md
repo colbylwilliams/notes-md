@@ -75,11 +75,13 @@ Notes MD supports configuration via environment variables using `.env` files. Yo
 
 Example variables can be found in the `.env.example` file:
 
-- `VITE_API_URL`: Base URL for API endpoints
-- `VITE_ENABLE_DARK_MODE_BY_DEFAULT`: Set to 'true' to enable dark mode by default
-- `VITE_ENABLE_AUTOSAVE`: Enable/disable autosave functionality
-- `VITE_APP_TITLE`: Application title
-- `VITE_AUTOSAVE_INTERVAL`: Time interval for autosave in milliseconds
+| Variable | Description |
+| --- | --- |
+| `VITE_API_URL` | Base URL for API endpoints |
+| `VITE_ENABLE_DARK_MODE_BY_DEFAULT` | Set to 'true' to enable dark mode by default |
+| `VITE_ENABLE_AUTOSAVE` | Enable/disable autosave functionality |
+| `VITE_APP_TITLE` | Application title |
+| `VITE_AUTOSAVE_INTERVAL` | Time interval for autosave in milliseconds |
 
 **Note:** Only variables prefixed with `VITE_` will be exposed to your client-side code.
 
