@@ -96,6 +96,41 @@ npm run build
 npm start
 ```
 
+### Docker Deployment
+
+You can also deploy Notes MD using Docker containers.
+
+#### Using Docker Compose (Recommended)
+
+1. Clone the repository
+   ```
+   git clone https://github.com/colbylwilliams/notes-md.git
+   cd notes-md
+   ```
+
+2. Start the containers
+   ```
+   docker-compose up -d
+   ```
+
+3. Access the application at `http://localhost`
+
+#### Using Pre-built Images
+
+The latest Docker images are available from GitHub Container Registry:
+
+```
+# Pull the images
+docker pull ghcr.io/colbylwilliams/notes-md-web:latest
+docker pull ghcr.io/colbylwilliams/notes-md-api:latest
+
+# Run the API container
+docker run -d -p 3000:3000 --name notes-md-api ghcr.io/colbylwilliams/notes-md-api:latest
+
+# Run the web container
+docker run -d -p 80:80 --name notes-md-web ghcr.io/colbylwilliams/notes-md-web:latest
+```
+
 ## Usage
 
 - Click the '+' button to create a new note
