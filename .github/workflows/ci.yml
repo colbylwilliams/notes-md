@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [main]
 
-defaults:
-  run:
-    working-directory: src
 
 jobs:
   build:
@@ -16,6 +13,11 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x, 20.x]
+        project: [web, api]
+
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
 
     steps:
       - uses: actions/checkout@v4
@@ -25,13 +27,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-          cache-dependency-path: 'src/package-lock.json'
+          cache-dependency-path: |
+            **/package-lock.json
           
       - name: Install dependencies
         run: npm ci
         
       - name: Lint
-        run: npm run lint
+        run: npm run lint -- --no-error-on-unmatched-pattern
         
       - name: Build
         run: npm run build
