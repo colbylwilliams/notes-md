@@ -12,6 +12,7 @@ A web application for taking and managing notes in Markdown format.
 - Dark mode support
 - Local storage for persistence
 - Responsive design for various screen sizes
+- REST API for serving notes
 
 ## Tech Stack
 
@@ -20,6 +21,12 @@ A web application for taking and managing notes in Markdown format.
 - Vite
 - Material UI
 - React Markdown
+- Express (REST API)
+
+## Project Structure
+
+- `/web` - Frontend application (React, TypeScript, Vite)
+- `/api` - Backend REST API (Express, TypeScript)
 
 ## Getting Started
 
@@ -28,7 +35,7 @@ A web application for taking and managing notes in Markdown format.
 - Node.js (v14 or higher)
 - npm or yarn
 
-### Installation
+### Frontend Installation
 
 1. Clone the repository
    ```
@@ -38,7 +45,7 @@ A web application for taking and managing notes in Markdown format.
 
 2. Install dependencies
    ```
-   cd src
+   cd web
    npm install
    ```
 
@@ -55,10 +62,38 @@ A web application for taking and managing notes in Markdown format.
 
 5. Open your browser and navigate to `http://localhost:5173`
 
+### API Installation
+
+1. Install dependencies
+   ```
+   cd api
+   npm install
+   ```
+
+2. Configure environment variables
+   ```
+   cp .env.example .env
+   ```
+   Modify the `.env` file with your specific configuration.
+
+3. Start the development server
+   ```
+   npm run dev
+   ```
+
+4. The API will be available at `http://localhost:3000`
+
 ### Building for Production
 
 ```
+# Frontend
+cd web
 npm run build
+
+# API
+cd api
+npm run build
+npm start
 ```
 
 ## Usage
@@ -68,8 +103,11 @@ npm run build
 - Write your markdown in the editor
 - See the rendered preview in real-time on the right panel
 - Use '# Title' at the beginning of your note to set its title
+- Use the API endpoints to manage notes programmatically
 
 ## Environment Variables
+
+### Frontend
 
 Notes MD supports configuration via environment variables using `.env` files. You can create a `.env` file in the project root to customize your development environment.
 
@@ -84,6 +122,13 @@ Example variables can be found in the `.env.example` file:
 | `VITE_AUTOSAVE_INTERVAL` | Time interval for autosave in milliseconds |
 
 **Note:** Only variables prefixed with `VITE_` will be exposed to your client-side code.
+
+### API
+
+| Variable | Description |
+| --- | --- |
+| `PORT` | Port for the API server (default: 3000) |
+| `NODE_ENV` | Environment (development, production) |
 
 ## License
 
