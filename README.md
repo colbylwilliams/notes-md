@@ -130,6 +130,74 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Docker Deployment
+
+### Container Images
+
+Both the web application and API are available as Docker images and are automatically published to GitHub Container Registry when changes are merged to the main branch.
+
+**Images:**
+- `ghcr.io/colbylwilliams/notes-md-web:latest` - React frontend served by nginx
+- `ghcr.io/colbylwilliams/notes-md-api:latest` - Express.js API server
+
+### Running with Docker
+
+**Web Application:**
+```bash
+docker run -d -p 80:80 ghcr.io/colbylwilliams/notes-md-web:latest
+```
+
+**API Server:**
+```bash
+docker run -d -p 3000:3000 ghcr.io/colbylwilliams/notes-md-api:latest
+```
+
+**Both together:**
+```bash
+# Run API
+docker run -d --name notes-api -p 3000:3000 ghcr.io/colbylwilliams/notes-md-api:latest
+
+# Run Web (configure it to use the API)
+docker run -d --name notes-web -p 80:80 ghcr.io/colbylwilliams/notes-md-web:latest
+```
+
+### Docker Compose
+
+For easier deployment, you can use Docker Compose:
+
+```yaml
+version: '3.8'
+services:
+  api:
+    image: ghcr.io/colbylwilliams/notes-md-api:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+
+  web:
+    image: ghcr.io/colbylwilliams/notes-md-web:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+```
+
+### Building Images Locally
+
+To build the images locally:
+
+```bash
+# Build web image
+cd web
+docker build -t notes-md-web .
+
+# Build API image
+cd api
+docker build -t notes-md-api .
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
