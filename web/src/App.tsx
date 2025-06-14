@@ -24,7 +24,17 @@ function App() {
 
   // Load notes on initial render
   useEffect(() => {
-    const allNotes = notesService.getAllNotes();
+    let allNotes = notesService.getAllNotes();
+    
+    // Check if puzzle solution note already exists
+    const puzzleSolutionExists = allNotes.some(note => note.title === 'Sliding Puzzle Solution');
+    
+    // If no puzzle solution note exists, create one
+    if (!puzzleSolutionExists) {
+      notesService.addCrosswordPuzzleSolution();
+      allNotes = notesService.getAllNotes();
+    }
+    
     setNotes(allNotes);
     
     // Set the first note as selected if available
