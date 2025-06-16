@@ -1,6 +1,6 @@
 # Notes MD
 
-[![CI](https://github.com/colbylwilliams/notes-md/actions/workflows/ci.yml/badge.svg)](https://github.com/colbylwilliams/notes-md/actions/workflows/ci.yml)
+
 
 A web application for taking and managing notes in Markdown format.
 
