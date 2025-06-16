@@ -130,6 +130,60 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Docker
+
+You can run the entire application using Docker and Docker Compose:
+
+### Quick Start with Docker Compose
+
+```bash
+# Build and start both applications
+docker compose up -d
+
+# View logs
+docker compose logs -f
+
+# Stop services
+docker compose down
+```
+
+The web application will be available at `http://localhost` and the API at `http://localhost:3000`.
+
+### Individual Docker Images
+
+#### Build Images
+
+```bash
+# Build API image
+docker build -t notes-md-api ./api
+
+# Build Web image
+docker build -t notes-md-web ./web
+```
+
+#### Run Containers
+
+```bash
+# Run API container
+docker run -d -p 3000:3000 --name notes-md-api notes-md-api
+
+# Run Web container (requires API to be running)
+docker run -d -p 80:80 --name notes-md-web --link notes-md-api:api notes-md-web
+```
+
+### Published Images
+
+Container images are automatically built and published to GitHub Container Registry on every push to the main branch:
+
+- Web App: `ghcr.io/colbylwilliams/notes-md-web:latest`
+- API: `ghcr.io/colbylwilliams/notes-md-api:latest`
+
+```bash
+# Pull and run published images
+docker run -d -p 3000:3000 ghcr.io/colbylwilliams/notes-md-api:latest
+docker run -d -p 80:80 ghcr.io/colbylwilliams/notes-md-web:latest
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
