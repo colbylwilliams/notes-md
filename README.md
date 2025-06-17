@@ -96,6 +96,34 @@ npm run build
 npm start
 ```
 
+### Docker Containers
+
+Pre-built Docker images are available from GitHub Container Registry:
+
+```bash
+# Run the API
+docker run -p 3000:3000 ghcr.io/colbylwilliams/notes-md-api:latest
+
+# Run the web app  
+docker run -p 8080:80 ghcr.io/colbylwilliams/notes-md-web:latest
+```
+
+Or build locally:
+
+```bash
+# Build and run API
+cd api
+docker build -t notes-md-api .
+docker run -p 3000:3000 notes-md-api
+
+# Build and run web app
+cd web  
+docker build -t notes-md-web .
+docker run -p 8080:80 notes-md-web
+```
+
+Both containers support multi-architecture builds (amd64/arm64) and include health checks.
+
 ## Usage
 
 - Click the '+' button to create a new note
