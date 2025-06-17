@@ -1,10 +1,11 @@
+---
 name: Container Images
 
 on:
   push:
     branches: [main]
   # Allow manual trigger
-  workflow_dispatch:
+  workflow_dispatch: true
 
 env:
   REGISTRY: ghcr.io
@@ -16,7 +17,7 @@ jobs:
     strategy:
       matrix:
         app: [api, web]
-    
+
     permissions:
       contents: read
       packages: write
