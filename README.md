@@ -96,6 +96,48 @@ npm run build
 npm start
 ```
 
+### Using Docker
+
+#### Docker Compose (Recommended)
+
+Run both the API and web application together:
+
+```bash
+docker compose up -d
+```
+
+This will start:
+- API server on `http://localhost:3000`
+- Web application on `http://localhost:80`
+
+#### Individual Docker Images
+
+Build and run the API:
+```bash
+cd api
+docker build -t notes-md-api .
+docker run -p 3000:3000 notes-md-api
+```
+
+Build and run the web application:
+```bash
+cd web
+docker build -t notes-md-web .
+docker run -p 80:80 notes-md-web
+```
+
+#### Pre-built Images
+
+Pre-built images are available from GitHub Container Registry:
+
+```bash
+# Pull and run API
+docker run -p 3000:3000 ghcr.io/colbylwilliams/notes-md/api:latest
+
+# Pull and run web app
+docker run -p 80:80 ghcr.io/colbylwilliams/notes-md/web:latest
+```
+
 ## Usage
 
 - Click the '+' button to create a new note
