@@ -130,6 +130,10 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+For comprehensive documentation, including detailed setup guides, API reference, and development guidelines, see the [/docs](./docs/) folder.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
