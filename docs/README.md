@@ -22,16 +22,16 @@ Notes MD is a web application for taking and managing notes in Markdown format, 
 
 ## TODOs
 
-- [ ] Complete architecture documentation with system diagrams
-- [ ] Expand API reference with all endpoint examples
-- [ ] Add deployment guides for various platforms (Docker, AWS, etc.)
-- [ ] Create comprehensive contributing guidelines
-- [ ] Document testing strategies and setup
-- [ ] Add troubleshooting section for common development issues
-- [ ] Include performance optimization guides
+- [x] Complete architecture documentation with system components and data flow
+- [x] Expand API reference with all endpoint examples and schemas
+- [x] Add deployment guides for development and production environments
+- [x] Create comprehensive contributing guidelines with project standards
+- [x] Document testing strategies and development workflow
+- [x] Add troubleshooting section for common development issues
+- [ ] Include performance optimization guides and monitoring setup
 - [ ] Add security best practices documentation
 - [ ] Create user guides for advanced features
-- [ ] Document database schema and data models
+- [ ] Document database schema and data models (when database is implemented)
 
 ## Contributing to Documentation
 
