@@ -27,6 +27,29 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Documentation and guides
+
+## Documentation
+
+📚 **[Full Documentation](./docs/README.md)** - Complete guides and references
+
+### Quick Links
+- [Getting Started Guide](./docs/user-guide/getting-started.md) - New user onboarding
+- [Developer Guide](./docs/developer-guide/README.md) - Development setup and contribution
+- [API Documentation](./docs/api/README.md) - REST API reference
+- [Configuration](./docs/configuration/README.md) - Environment variables and settings
+
+### Documentation TODOs
+- [ ] Complete user guide with screenshots and detailed workflows
+- [ ] Add comprehensive API documentation with examples
+- [ ] Create developer setup and contribution guidelines
+- [ ] Add deployment guide for various platforms
+- [ ] Document architecture and design decisions
+- [ ] Create troubleshooting guide with common issues
+- [ ] Add FAQ section with community questions
+- [ ] Set up documentation site (e.g., GitHub Pages, Docusaurus)
+- [ ] Add video tutorials and onboarding materials
+- [ ] Create mobile app documentation when available
 
 ## Getting Started
 
