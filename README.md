@@ -27,6 +27,16 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Documentation (setup guides, API docs, user guides)
+
+## Documentation
+
+For comprehensive documentation, please visit the [docs](./docs/) folder:
+
+- [API Documentation](./docs/api.md) - REST API endpoints and usage
+- [User Guide](./docs/user-guide.md) - How to use the application
+- [Developer Guide](./docs/developer-guide.md) - Development setup and guidelines
+- [Deployment Guide](./docs/deployment.md) - Deployment instructions
 
 ## Getting Started
 
