@@ -27,6 +27,7 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Project documentation
 
 ## Getting Started
 
@@ -133,3 +134,7 @@ Example variables can be found in the `.env.example` file:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Documentation
+
+For comprehensive guides and reference materials, see the [documentation](docs/README.md).
