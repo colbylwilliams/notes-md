@@ -130,6 +130,28 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+📚 Comprehensive documentation is available in the [`/docs`](docs/) directory:
+
+- [Getting Started Guide](docs/getting-started.md)
+- [API Documentation](docs/api.md) 
+- [Deployment Guide](docs/deployment.md)
+- [Contributing Guidelines](docs/contributing.md)
+
+## TODOs
+
+<!-- TODO: Add comprehensive API documentation with examples -->
+<!-- TODO: Create Docker setup for easy deployment -->
+<!-- TODO: Add unit and integration tests -->
+<!-- TODO: Implement user authentication and authorization -->
+<!-- TODO: Add database persistence (currently using localStorage) -->
+<!-- TODO: Create deployment automation with CI/CD -->
+<!-- TODO: Add monitoring and logging setup -->
+<!-- TODO: Implement note sharing and collaboration features -->
+<!-- TODO: Add export functionality (PDF, HTML, etc.) -->
+<!-- TODO: Create mobile-responsive design improvements -->
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
