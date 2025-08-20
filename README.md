@@ -130,6 +130,24 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+Comprehensive documentation is available in the `/docs` folder:
+
+- [Documentation Index](docs/index.md) - Main documentation entry point
+- [User Guide](docs/user-guide.md) - How to use the application
+- [Developer Guide](docs/developer-guide.md) - Development and contribution guidelines
+- [API Reference](docs/api-reference.md) - Complete API documentation
+
+### Documentation TODOs
+
+- [ ] Complete user guide with screenshots and detailed workflows
+- [ ] Add developer contribution guidelines and coding standards
+- [ ] Document API endpoints with comprehensive examples
+- [ ] Add troubleshooting and FAQ sections
+- [ ] Create deployment and configuration guides
+- [ ] Add testing documentation and best practices
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
