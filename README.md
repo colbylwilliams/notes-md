@@ -130,6 +130,51 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+For detailed documentation, see the [docs](docs/) directory:
+
+- [📚 Complete Documentation](docs/README.md) - Main documentation hub
+- [🚀 Installation Guide](docs/installation.md) - Detailed setup instructions
+- [🔌 API Documentation](docs/api.md) - Complete API reference
+- [💻 Development Guide](docs/development.md) - Local development setup
+- [🌐 Deployment Guide](docs/deployment.md) - Production deployment
+- [🤝 Contributing](docs/contributing.md) - How to contribute
+
+## TODOs
+
+### Documentation
+- [ ] Complete API documentation with all endpoint examples
+- [ ] Add comprehensive installation troubleshooting guide
+- [ ] Create deployment guides for major cloud platforms
+- [ ] Add development environment setup for VS Code
+- [ ] Document testing strategies and conventions
+
+### Features
+- [ ] Implement user authentication and authorization
+- [ ] Add database persistence (replace in-memory storage)
+- [ ] Implement note sharing and collaboration features
+- [ ] Add export functionality (PDF, HTML, etc.)
+- [ ] Implement note tagging and categorization
+- [ ] Add search functionality across notes
+- [ ] Implement note versioning/history
+
+### Technical Improvements
+- [ ] Add comprehensive test coverage
+- [ ] Implement proper error handling and logging
+- [ ] Add rate limiting to API endpoints
+- [ ] Optimize frontend bundle size
+- [ ] Add offline support with service workers
+- [ ] Implement CI/CD pipeline
+- [ ] Add Docker containerization
+
+### Security
+- [ ] Implement input validation and sanitization
+- [ ] Add HTTPS/SSL configuration
+- [ ] Implement proper session management
+- [ ] Add security headers and CSP
+- [ ] Conduct security audit
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
