@@ -130,6 +130,29 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](./docs/) directory:
+
+- [Getting Started Guide](./docs/getting-started.md) - Complete setup and installation
+- [API Documentation](./docs/api.md) - REST API reference  
+- [Frontend Documentation](./docs/frontend.md) - UI architecture and components
+- [Deployment Guide](./docs/deployment.md) - Production deployment
+- [Contributing Guidelines](./docs/contributing.md) - How to contribute
+
+## TODO
+
+- [ ] Complete comprehensive API documentation with all endpoint examples
+- [ ] Add detailed deployment guides for major platforms (Vercel, Railway, Docker)
+- [ ] Create contributor onboarding documentation
+- [ ] Add automated testing documentation and CI/CD setup
+- [ ] Document security best practices and authentication implementation
+- [ ] Add performance optimization guides
+- [ ] Create troubleshooting and FAQ sections
+- [ ] Add accessibility documentation and guidelines
+- [ ] Document internationalization setup for multiple languages
+- [ ] Add monitoring and analytics integration guides
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
