@@ -27,6 +27,7 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Project documentation
 
 ## Getting Started
 
@@ -129,6 +130,16 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](docs/) folder:
+
+- [Documentation Overview](docs/README.md) - Start here for all documentation
+- [API Documentation](docs/api/README.md) - REST API reference
+- [User Guide](docs/user-guide/README.md) - End-user documentation  
+- [Development Guide](docs/development/README.md) - Developer setup and contribution guidelines
+- [Deployment Guide](docs/deployment/README.md) - Production deployment information
 
 ## License
 
