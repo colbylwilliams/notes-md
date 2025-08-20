@@ -130,6 +130,43 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](docs/) directory:
+
+- [Documentation Index](docs/index.md) - Main documentation overview
+- [API Documentation](docs/api.md) - REST API endpoints and usage
+- [Frontend Documentation](docs/frontend.md) - React application architecture
+- [Development Guide](docs/development.md) - Developer setup and workflow
+- [User Guide](docs/user-guide.md) - How to use the application
+- [Contributing Guide](docs/contributing.md) - Guidelines for contributors
+
+## TODO
+
+### Documentation Tasks
+
+- [ ] Complete API documentation with all endpoints and examples
+- [ ] Document all frontend components and their props
+- [ ] Add comprehensive development setup guide
+- [ ] Create user guide with screenshots and examples
+- [ ] Document contributing guidelines and code review process
+- [ ] Add troubleshooting guide for common issues
+- [ ] Document deployment process and CI/CD setup
+- [ ] Add architecture diagrams and technical specifications
+- [ ] Create getting started video or interactive tutorial
+- [ ] Document testing strategies and guidelines
+
+### Feature Development
+
+- [ ] Add authentication and user management
+- [ ] Implement note sharing and collaboration features
+- [ ] Add note categories and tagging system
+- [ ] Implement search functionality
+- [ ] Add export/import capabilities (PDF, HTML, etc.)
+- [ ] Create mobile app version
+- [ ] Add real-time collaboration features
+- [ ] Implement note version history
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
