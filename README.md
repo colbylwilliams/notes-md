@@ -4,6 +4,16 @@
 
 A web application for taking and managing notes in Markdown format.
 
+## 📚 Documentation
+
+For comprehensive documentation, visit the [docs](./docs/) folder:
+- [Getting Started Guide](./docs/getting-started.md) - Quick start for users and developers
+- [API Documentation](./docs/api.md) - Complete REST API reference
+- [Frontend Development](./docs/frontend.md) - React development guide
+- [Architecture Overview](./docs/architecture.md) - System design and decisions
+- [Contributing Guidelines](./docs/contributing.md) - How to contribute
+- [Deployment Guide](./docs/deployment.md) - Production deployment
+
 ## Features
 
 - Create, edit, and delete markdown notes
@@ -133,3 +143,32 @@ Example variables can be found in the `.env.example` file:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## TODO
+
+### Features
+- [ ] User authentication and accounts
+- [ ] Real-time collaborative editing
+- [ ] Note categories and tags
+- [ ] Search functionality
+- [ ] Export notes to PDF/HTML
+- [ ] Rich text editor mode
+- [ ] Note sharing and permissions
+- [ ] Mobile application
+
+### Technical Improvements
+- [ ] Database persistence (replace file storage)
+- [ ] API rate limiting and caching
+- [ ] Unit and integration tests
+- [ ] CI/CD pipeline setup
+- [ ] Docker containerization
+- [ ] Performance monitoring
+- [ ] Accessibility improvements
+- [ ] Internationalization (i18n)
+
+### Documentation
+- [ ] User guide with screenshots
+- [ ] Video tutorials
+- [ ] API client examples
+- [ ] Troubleshooting guide
+- [ ] Performance optimization guide
