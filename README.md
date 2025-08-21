@@ -27,6 +27,7 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Documentation and guides
 
 ## Getting Started
 
@@ -105,6 +106,16 @@ npm start
 - Use '# Title' at the beginning of your note to set its title
 - Use the API endpoints to manage notes programmatically
 
+## Documentation
+
+For detailed documentation, guides, and references, see the [`/docs`](docs/) directory:
+
+- [API Documentation](docs/api.md) - REST API endpoints and usage
+- [Frontend Documentation](docs/frontend.md) - React application development
+- [Development Guide](docs/development.md) - Development environment setup
+- [Deployment Guide](docs/deployment.md) - Production deployment instructions
+- [Contributing Guidelines](docs/contributing.md) - How to contribute to the project
+
 ## Environment Variables
 
 ### Frontend
@@ -129,6 +140,19 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## TODO
+
+- [ ] Add user authentication and authorization
+- [ ] Implement note sharing and collaboration features
+- [ ] Add note categorization and tagging
+- [ ] Create mobile application
+- [ ] Add full-text search functionality
+- [ ] Implement note export/import (PDF, HTML, etc.)
+- [ ] Add automated testing and CI/CD pipeline
+- [ ] Create comprehensive API documentation with examples
+- [ ] Add database persistence layer
+- [ ] Implement real-time collaborative editing
 
 ## License
 
