@@ -130,6 +130,29 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](./docs) directory:
+
+- [📖 Complete Documentation](./docs/index.md) - Full documentation index
+- [🚀 Getting Started](./docs/getting-started.md) - Setup and installation guide
+- [🎨 Frontend Documentation](./docs/frontend/index.md) - React application docs
+- [🔌 API Documentation](./docs/api/index.md) - Backend API reference
+- [🚀 Deployment Guide](./docs/deployment.md) - Production deployment
+
+### Documentation TODOs
+
+- [ ] Add comprehensive API examples and request/response documentation
+- [ ] Create frontend component documentation with props and usage examples
+- [ ] Add system architecture diagrams and design decisions
+- [ ] Document testing strategies and write testing guides
+- [ ] Create contribution guidelines and coding standards
+- [ ] Add deployment examples for major cloud platforms
+- [ ] Document security best practices and configuration
+- [ ] Create troubleshooting guides for common issues
+- [ ] Add performance optimization guidelines
+- [ ] Document environment variable configurations in detail
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
