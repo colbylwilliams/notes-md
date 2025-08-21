@@ -27,6 +27,17 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Detailed documentation and guides
+
+## Documentation
+
+For detailed documentation, visit the [docs folder](./docs/README.md) which includes:
+
+- [Getting Started Guide](./docs/getting-started.md) - Comprehensive setup instructions
+- [API Documentation](./docs/api.md) - Complete API reference
+- [Frontend Documentation](./docs/frontend.md) - Frontend development guide
+- [Deployment Guide](./docs/deployment.md) - Production deployment instructions
+- [Contributing Guidelines](./docs/contributing.md) - How to contribute to the project
 
 ## Getting Started
 
@@ -129,6 +140,31 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## TODO
+
+### Documentation Improvements
+- [ ] Add comprehensive testing documentation and examples
+- [ ] Create detailed API security and authentication guide
+- [ ] Add performance optimization guidelines
+- [ ] Create troubleshooting and FAQ section
+- [ ] Add Docker deployment documentation
+- [ ] Create database integration guide for persistent storage
+
+### Feature Development
+- [ ] Implement user authentication and authorization
+- [ ] Add database persistence (replace in-memory storage)
+- [ ] Create note sharing and collaboration features
+- [ ] Add note categories and tagging system
+- [ ] Implement full-text search functionality
+- [ ] Add export/import features (PDF, HTML, etc.)
+
+### Infrastructure
+- [ ] Set up CI/CD pipeline
+- [ ] Add comprehensive test suite
+- [ ] Implement monitoring and logging
+- [ ] Create automated deployment scripts
+- [ ] Add error tracking and reporting
 
 ## License
 
