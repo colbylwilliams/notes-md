@@ -130,6 +130,46 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+For comprehensive documentation, see the [docs/](docs/) directory:
+
+- [📚 Documentation Index](docs/README.md) - Complete documentation overview
+- [🚀 Getting Started Guide](docs/getting-started.md) - Detailed setup instructions
+- [🔌 API Documentation](docs/api/README.md) - REST API reference
+- [⚛️ Frontend Documentation](docs/frontend/README.md) - React app architecture
+- [👨‍💻 Development Guide](docs/development.md) - Contributing and development workflow
+- [🚀 Deployment Guide](docs/deployment.md) - Production deployment instructions
+
+## TODO
+
+The following items are planned for future development:
+
+### Documentation
+- [ ] Complete comprehensive API documentation with all endpoint schemas
+- [ ] Add detailed frontend component documentation and examples
+- [ ] Create development workflow and contribution guidelines
+- [ ] Add deployment guides for major cloud platforms (Vercel, Netlify, AWS)
+- [ ] Include troubleshooting and FAQ sections
+
+### Features
+- [ ] User authentication and authorization
+- [ ] Note sharing and collaboration features
+- [ ] Note categories and tagging system
+- [ ] Search functionality across notes
+- [ ] Export notes to various formats (PDF, HTML, etc.)
+- [ ] Note templates and snippets
+- [ ] Real-time collaborative editing
+
+### Technical Improvements
+- [ ] Add comprehensive test coverage
+- [ ] Implement CI/CD pipeline
+- [ ] Add Docker containerization
+- [ ] Performance optimizations and caching
+- [ ] Database integration for persistent storage
+- [ ] Mobile responsive improvements
+- [ ] Accessibility enhancements
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
