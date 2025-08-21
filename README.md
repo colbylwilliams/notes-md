@@ -4,6 +4,10 @@
 
 A web application for taking and managing notes in Markdown format.
 
+## Documentation
+
+📚 **[Complete Documentation](./docs/README.md)** - Visit our docs folder for comprehensive guides and references.
+
 ## Features
 
 - Create, edit, and delete markdown notes
@@ -133,3 +137,28 @@ Example variables can be found in the `.env.example` file:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Documentation TODOs
+
+The following documentation improvements are planned:
+
+### High Priority
+- [ ] Complete the [Getting Started Guide](./docs/getting-started.md) with step-by-step screenshots
+- [ ] Document system [Architecture](./docs/architecture.md) with diagrams and component interactions
+- [ ] Expand [API Reference](./docs/api-reference.md) with complete endpoint documentation and examples
+- [ ] Create comprehensive [User Guide](./docs/user-guide.md) with use cases and best practices
+
+### Medium Priority
+- [ ] Complete [Development Guide](./docs/development.md) for contributors
+- [ ] Document [Deployment](./docs/deployment.md) procedures for various environments
+- [ ] Add troubleshooting section to documentation
+- [ ] Create video tutorials for common workflows
+
+### Low Priority
+- [ ] Set up documentation versioning system
+- [ ] Add API changelog documentation
+- [ ] Create interactive API explorer
+- [ ] Add community contribution guidelines to docs
+- [ ] Implement documentation search functionality
+
+> 💡 **Contributing to Documentation**: We welcome contributions to improve our documentation! See the [docs folder](./docs/) for current documentation structure and TODOs.
