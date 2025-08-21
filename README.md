@@ -130,6 +130,25 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+📚 Comprehensive documentation is available in the [`/docs`](./docs/) folder:
+
+- **[API Documentation](./docs/api/)** - REST API endpoints and usage
+- **[Web Documentation](./docs/web/)** - Frontend components and features
+- **[Development Guide](./docs/development/)** - Setup and contribution guidelines
+- **[Deployment Guide](./docs/deployment/)** - Production deployment instructions
+
+### Documentation TODOs
+
+- [ ] Complete API endpoint documentation with examples
+- [ ] Add detailed component documentation for React frontend  
+- [ ] Create comprehensive development workflow guides
+- [ ] Add deployment guides for different cloud platforms
+- [ ] Include architecture diagrams and system overview
+- [ ] Add user guides and tutorials
+- [ ] Document testing strategies and best practices
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
