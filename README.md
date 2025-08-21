@@ -130,6 +130,28 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## 📝 TODOs
+
+We're actively working on improving Notes MD! Check out our [comprehensive documentation](./docs/README.md) for detailed information and current TODO items:
+
+- **Documentation**: See [/docs](./docs/README.md) for complete project documentation
+- **Getting Started**: Enhanced setup guide in [/docs/getting-started.md](./docs/getting-started.md)
+- **API Documentation**: Expanded API docs in [/docs/api.md](./docs/api.md)
+- **Frontend Documentation**: Component architecture docs in [/docs/frontend.md](./docs/frontend.md)
+- **Deployment Guide**: Production deployment guide in [/docs/deployment.md](./docs/deployment.md)
+- **Contributing**: Contribution guidelines in [/docs/contributing.md](./docs/contributing.md)
+
+### Immediate TODOs
+
+- [ ] Complete comprehensive documentation in `/docs` folder
+- [ ] Add deployment examples and Docker configuration
+- [ ] Enhance testing coverage for both frontend and backend
+- [ ] Implement user authentication and authorization
+- [ ] Add database persistence options
+- [ ] Create mobile-responsive design improvements
+- [ ] Add export/import functionality for notes
+- [ ] Implement search and filtering capabilities
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
