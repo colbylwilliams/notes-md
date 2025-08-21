@@ -1,8 +1,20 @@
 # Notes MD
 
-
-
 A web application for taking and managing notes in Markdown format.
+
+## 📚 Documentation
+
+For comprehensive documentation, please visit the [docs](./docs/) directory:
+
+- [📖 Complete Documentation](./docs/README.md) - Full documentation index
+- [🚀 Detailed Installation Guide](./docs/installation.md) - Step-by-step setup
+- [🔌 API Reference](./docs/api.md) - Complete API documentation  
+- [🎨 Frontend Guide](./docs/frontend.md) - UI components and architecture
+- [👩‍💻 Development Guide](./docs/development.md) - Development guidelines
+- [🤝 Contributing](./docs/contributing.md) - How to contribute
+- [🚀 Deployment](./docs/deployment.md) - Production deployment
+
+> **TODO**: Complete the comprehensive documentation in the `/docs` folder. The documentation is currently under development and contains placeholder content that needs to be filled out with detailed information.
 
 ## Features
 
@@ -133,3 +145,18 @@ Example variables can be found in the `.env.example` file:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## TODOs
+
+The following items need to be completed for the documentation:
+
+- [ ] Complete API documentation with detailed examples
+- [ ] Add comprehensive frontend component documentation
+- [ ] Create development environment setup guide
+- [ ] Document testing procedures and guidelines
+- [ ] Add deployment instructions for various platforms
+- [ ] Create contributing guidelines and code style standards
+- [ ] Document environment variables and configuration options
+- [ ] Add troubleshooting section for common issues
+- [ ] Create architectural decision records (ADRs)
+- [ ] Add performance optimization guidelines
