@@ -27,6 +27,26 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Comprehensive project documentation
+
+## Documentation
+
+For detailed documentation, visit the [`/docs`](docs/) directory:
+
+- **[Getting Started Guide](docs/getting-started.md)** - Detailed setup and installation
+- **[User Guide](docs/user-guide.md)** - How to use the application
+- **[API Reference](docs/api-reference.md)** - Complete API documentation
+- **[Architecture Overview](docs/architecture.md)** - System design and technical details
+- **[Contributing Guide](docs/contributing.md)** - Guidelines for contributors
+- **[Deployment Guide](docs/deployment.md)** - Production deployment instructions
+
+### TODOs
+- [ ] Complete comprehensive API documentation with examples
+- [ ] Add architecture diagrams and technical specifications
+- [ ] Create detailed user guide with screenshots
+- [ ] Document deployment strategies for various platforms
+- [ ] Add troubleshooting and FAQ sections
+- [ ] Set up automated documentation generation
 
 ## Getting Started
 
@@ -96,6 +116,8 @@ npm run build
 npm start
 ```
 
+**TODO:** See the [Deployment Guide](docs/deployment.md) for comprehensive production deployment instructions.
+
 ## Usage
 
 - Click the '+' button to create a new note
@@ -104,6 +126,8 @@ npm start
 - See the rendered preview in real-time on the right panel
 - Use '# Title' at the beginning of your note to set its title
 - Use the API endpoints to manage notes programmatically
+
+**TODO:** See the [User Guide](docs/user-guide.md) for detailed usage instructions with screenshots and examples.
 
 ## Environment Variables
 
@@ -129,6 +153,8 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+**TODO:** See the [Getting Started Guide](docs/getting-started.md) and [Deployment Guide](docs/deployment.md) for complete environment configuration details.
 
 ## License
 
