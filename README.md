@@ -130,6 +130,30 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+Comprehensive documentation is available in the `/docs` folder:
+
+- [Getting Started](./docs/getting-started.md) - Detailed setup and installation guide
+- [Architecture](./docs/architecture.md) - System architecture and design overview
+- [API Documentation](./docs/api.md) - Complete API reference and examples
+- [Deployment](./docs/deployment.md) - Production deployment guidelines
+- [Contributing](./docs/contributing.md) - Guidelines for contributing to the project
+- [Development](./docs/development.md) - Development workflow and best practices
+
+### TODO: Documentation Tasks
+
+- [ ] Complete comprehensive API documentation with all endpoints and examples
+- [ ] Add detailed architecture diagrams and system design documentation
+- [ ] Document deployment procedures for various cloud platforms
+- [ ] Create troubleshooting guides for common development and deployment issues
+- [ ] Add user guides and tutorials for the application interface
+- [ ] Document configuration options and environment variables in detail
+- [ ] Add testing documentation and best practices
+- [ ] Create performance optimization guides
+- [ ] Document security considerations and best practices
+- [ ] Add migration guides for future database implementations
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
