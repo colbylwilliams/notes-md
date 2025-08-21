@@ -130,6 +130,24 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](./docs/) folder:
+
+- [User Guide](./docs/user-guide/) - How to use Notes MD
+- [Developer Guide](./docs/developer/) - Development and contribution information  
+- [API Documentation](./docs/api/) - Complete API reference
+- [Deployment Guide](./docs/deployment/) - Deployment instructions
+
+### Documentation TODOs
+
+- [ ] Complete user guide with screenshots and tutorials
+- [ ] Expand developer documentation with architecture details
+- [ ] Create comprehensive API documentation with examples
+- [ ] Add deployment guides for various platforms
+- [ ] Set up automated documentation site (Docusaurus, GitBook, etc.)
+- [ ] Add documentation testing and validation
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
