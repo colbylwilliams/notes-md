@@ -130,6 +130,24 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+📚 **Comprehensive documentation is available in the [/docs](docs/) directory!**
+
+- [API Documentation](docs/api.md) - Complete API reference
+- [Frontend Documentation](docs/frontend.md) - Frontend development guide
+- [Deployment Guide](docs/deployment.md) - Deployment instructions
+- [Contributing Guide](docs/contributing.md) - How to contribute
+
+## TODOs
+
+- [ ] Expand API documentation with detailed examples
+- [ ] Add component documentation for the frontend
+- [ ] Create deployment guides for various platforms
+- [ ] Set up automated documentation generation
+- [ ] Add comprehensive testing documentation
+- [ ] Create tutorial and example projects
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
