@@ -27,6 +27,17 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Project documentation
+
+## Documentation
+
+📚 **[View Complete Documentation](docs/README.md)**
+
+- [Getting Started Guide](docs/getting-started.md) - Detailed setup instructions
+- [API Reference](docs/api-reference.md) - Complete API documentation
+- [Frontend Development Guide](docs/frontend-guide.md) - Frontend architecture and patterns
+- [Deployment Guide](docs/deployment.md) - Production deployment instructions
+- [Contributing Guidelines](docs/contributing.md) - How to contribute to the project
 
 ## Getting Started
 
@@ -129,6 +140,45 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## Development Status & TODOs
+
+### Current Status
+- ✅ Basic note creation, editing, and deletion
+- ✅ Real-time markdown preview
+- ✅ Dark mode support
+- ✅ Local storage persistence
+- ✅ REST API with Express
+
+### Planned Features & TODOs
+
+#### High Priority
+- [ ] **Authentication & User Management** - Add user accounts and secure note access
+- [ ] **Data Persistence** - Replace local storage with proper database (PostgreSQL/MongoDB)
+- [ ] **Note Search & Filtering** - Full-text search and tagging system
+- [ ] **Export/Import** - Support for various formats (PDF, HTML, JSON)
+
+#### Medium Priority  
+- [ ] **Real-time Collaboration** - WebSocket-based collaborative editing
+- [ ] **Mobile App** - React Native or PWA implementation
+- [ ] **Note Sharing** - Public/private sharing with permissions
+- [ ] **Version History** - Track and restore note revisions
+
+#### Documentation TODOs
+- [ ] **API Documentation** - Complete OpenAPI/Swagger specification
+- [ ] **Architecture Diagrams** - System architecture and data flow diagrams
+- [ ] **Deployment Guides** - Docker, Kubernetes, and cloud platform guides
+- [ ] **Testing Documentation** - Testing strategies and coverage reports
+- [ ] **Security Documentation** - Security best practices and audit results
+
+#### Infrastructure TODOs
+- [ ] **CI/CD Pipeline** - Automated testing, building, and deployment
+- [ ] **Monitoring & Logging** - Application performance monitoring
+- [ ] **Error Tracking** - Centralized error reporting and alerting
+- [ ] **Load Testing** - Performance benchmarks and optimization
+
+### Contributing
+See our [Contributing Guidelines](docs/contributing.md) for information on how to contribute to these features.
 
 ## License
 
