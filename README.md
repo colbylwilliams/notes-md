@@ -1,8 +1,19 @@
 # Notes MD
 
-
+<!-- TODO: Add project badges (build status, version, license) -->
+<!-- TODO: Add demo link and screenshots -->
 
 A web application for taking and managing notes in Markdown format.
+
+## 📚 Documentation
+
+For comprehensive documentation, see the [docs/](./docs/) folder:
+- [User Guide](./docs/user-guide/) - How to use Notes MD
+- [Developer Guide](./docs/developer-guide/) - Development setup and contribution
+- [API Documentation](./docs/api/) - REST API reference
+- [Deployment Guide](./docs/deployment/) - Deployment instructions
+
+<!-- TODO: Add quick demo GIF or video -->
 
 ## Features
 
@@ -13,6 +24,13 @@ A web application for taking and managing notes in Markdown format.
 - Local storage for persistence
 - Responsive design for various screen sizes
 - REST API for serving notes
+
+<!-- TODO: Add screenshots of key features -->
+<!-- TODO: Implement user authentication and multi-user support -->
+<!-- TODO: Add note search and filtering functionality -->
+<!-- TODO: Implement note tagging and categorization -->
+<!-- TODO: Add export functionality (PDF, HTML, etc.) -->
+<!-- TODO: Implement collaborative editing features -->
 
 ## Tech Stack
 
@@ -27,6 +45,11 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Comprehensive project documentation
+
+<!-- TODO: Add database schema documentation -->
+<!-- TODO: Document shared utilities and types -->
+<!-- TODO: Add testing directory structure -->
 
 ## Getting Started
 
@@ -85,6 +108,9 @@ A web application for taking and managing notes in Markdown format.
 
 ### Building for Production
 
+<!-- TODO: Add Docker-based build instructions -->
+<!-- TODO: Document environment-specific build configurations -->
+
 ```
 # Frontend
 cd web
@@ -104,6 +130,10 @@ npm start
 - See the rendered preview in real-time on the right panel
 - Use '# Title' at the beginning of your note to set its title
 - Use the API endpoints to manage notes programmatically
+
+<!-- TODO: Add keyboard shortcuts documentation -->
+<!-- TODO: Create video tutorials for common workflows -->
+<!-- TODO: Document advanced markdown features supported -->
 
 ## Environment Variables
 
@@ -129,6 +159,21 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+<!-- TODO: Add database connection environment variables -->
+<!-- TODO: Document authentication-related environment variables -->
+<!-- TODO: Add logging and monitoring configuration variables -->
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](./docs/contributing/) for details on:
+- Setting up your development environment
+- Code style and standards
+- Submitting pull requests
+- Reporting issues
+
+<!-- TODO: Add contributor recognition section -->
+<!-- TODO: Create issue and PR templates -->
 
 ## License
 
