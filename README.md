@@ -130,6 +130,30 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+For detailed documentation, please visit the [`/docs`](docs/) directory:
+
+- 📖 [Documentation Overview](docs/index.md) - Start here for comprehensive guides
+- 🚀 [Development Setup](docs/development/setup.md) - Detailed development environment setup
+- 🤝 [Contributing Guidelines](docs/development/contributing.md) - How to contribute to the project
+- 🔗 [API Reference](docs/api/endpoints.md) - Detailed API documentation and examples
+- 🚀 [Deployment Guide](docs/deployment/production.md) - Production deployment strategies
+- 🏗️ [Architecture Overview](docs/architecture.md) - System design and technical architecture
+
+### Documentation TODOs
+
+The documentation framework has been established with placeholder content. Key areas that need completion:
+
+- [ ] Complete development environment setup guides with troubleshooting
+- [ ] Expand API documentation with comprehensive examples and schemas
+- [ ] Add detailed deployment guides for various platforms (Docker, Kubernetes, cloud providers)
+- [ ] Create architecture diagrams and detailed system design documentation
+- [ ] Add contribution guidelines, coding standards, and community guidelines
+- [ ] Document testing strategies and requirements
+- [ ] Add user guides and tutorials for the application features
+- [ ] Create troubleshooting guides and FAQ sections
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
