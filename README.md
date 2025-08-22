@@ -27,6 +27,16 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Project documentation
+
+## Documentation
+
+For detailed documentation, please visit the [docs](./docs) folder:
+
+- [Getting Started Guide](./docs/getting-started.md)
+- [API Documentation](./docs/api.md)
+- [Development Guide](./docs/development.md)
+- [Deployment Guide](./docs/deployment.md)
 
 ## Getting Started
 
@@ -129,6 +139,24 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## TODO
+
+- [ ] Complete comprehensive documentation in `/docs` folder
+- [ ] Add unit tests for frontend components
+- [ ] Add integration tests for API endpoints
+- [ ] Implement user authentication and authorization
+- [ ] Add database persistence (currently uses local storage)
+- [ ] Implement note sharing and collaboration features
+- [ ] Add search and filtering capabilities
+- [ ] Implement note categories and tags
+- [ ] Add export functionality (PDF, HTML)
+- [ ] Implement offline support with service workers
+- [ ] Add comprehensive error handling and user feedback
+- [ ] Performance optimization and lazy loading
+- [ ] Accessibility improvements (WCAG compliance)
+- [ ] Mobile app development
+- [ ] Docker containerization
 
 ## License
 
