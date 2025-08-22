@@ -1,8 +1,30 @@
 # Notes MD
 
-
-
 A web application for taking and managing notes in Markdown format.
+
+## Documentation
+
+For comprehensive documentation, please visit the [docs folder](./docs/):
+
+- 📖 [Complete Documentation](./docs/index.md)
+- 🚀 [Getting Started Guide](./docs/getting-started.md)
+- 🔧 [API Reference](./docs/api-reference.md)
+- 👩‍💻 [Development Guide](./docs/development.md)
+
+## TODOs
+
+- [ ] Add comprehensive API testing suite
+- [ ] Implement user authentication and authorization
+- [ ] Add database integration (PostgreSQL/MongoDB)
+- [ ] Add note sharing and collaboration features
+- [ ] Implement search functionality across notes
+- [ ] Add export functionality (PDF, HTML, etc.)
+- [ ] Add note categories and tagging system
+- [ ] Implement real-time collaborative editing
+- [ ] Add mobile app support
+- [ ] Add deployment documentation for various platforms
+- [ ] Set up automated testing and CI/CD pipeline
+- [ ] Add internationalization (i18n) support
 
 ## Features
 
