@@ -27,6 +27,7 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Documentation and guides
 
 ## Getting Started
 
@@ -129,6 +130,53 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](./docs/) directory:
+
+- [API Documentation](./docs/api/) - REST API endpoints and usage
+- [Frontend Documentation](./docs/frontend/) - React application architecture
+- [User Guides](./docs/guides/) - Step-by-step user tutorials  
+- [Contributing Guide](./docs/contributing.md) - Development and contribution guidelines
+
+## TODOs
+
+The following features and improvements are planned:
+
+### Documentation
+- [ ] Complete API endpoint documentation with examples
+- [ ] Add component documentation with props and usage
+- [ ] Create comprehensive user guides with screenshots
+- [ ] Document testing strategies and guidelines
+- [ ] Add troubleshooting and FAQ sections
+
+### Features
+- [ ] User authentication and authorization
+- [ ] Note categories and tags
+- [ ] Search functionality
+- [ ] Export notes to various formats
+- [ ] Real-time collaboration
+- [ ] File attachments support
+- [ ] Note templates
+- [ ] Keyboard shortcuts
+
+### Technical Improvements
+- [ ] Database integration (replace in-memory storage)
+- [ ] Rate limiting for API endpoints
+- [ ] Caching strategies
+- [ ] Performance optimizations
+- [ ] E2E testing setup
+- [ ] CI/CD pipeline improvements
+- [ ] Docker containerization
+- [ ] API versioning
+
+### UI/UX Enhancements
+- [ ] Improved mobile responsiveness
+- [ ] Note organization features
+- [ ] Better error handling and user feedback
+- [ ] Accessibility improvements
+- [ ] Theme customization options
 
 ## License
 
