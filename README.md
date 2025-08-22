@@ -27,6 +27,17 @@ A web application for taking and managing notes in Markdown format.
 
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
+- `/docs` - Documentation and guides
+
+## Documentation
+
+Comprehensive documentation is available in the [`/docs`](docs/) folder:
+
+- [User Guide](docs/user-guide/) - How to use Notes MD
+- [Developer Guide](docs/developer-guide/) - Development setup and contributing
+- [API Reference](docs/api-reference/) - Complete API documentation
+- [Deployment Guide](docs/deployment/) - Production deployment
+- [Architecture](docs/architecture/) - System design and architecture
 
 ## Getting Started
 
@@ -129,6 +140,32 @@ Example variables can be found in the `.env.example` file:
 | --- | --- |
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
+
+## TODO
+
+### Documentation
+- [ ] Complete user guide with screenshots and examples
+- [ ] Finish API documentation with comprehensive examples
+- [ ] Add deployment guides for popular platforms (Docker, Vercel, AWS, etc.)
+- [ ] Create video tutorials or interactive demos
+- [ ] Set up documentation website or GitHub Pages
+
+### Features
+- [ ] User authentication and authorization
+- [ ] Note sharing and collaboration
+- [ ] Note categories and tags
+- [ ] Search functionality
+- [ ] Export notes to various formats (PDF, HTML, etc.)
+- [ ] Import notes from other formats
+- [ ] Backup and sync capabilities
+
+### Technical Improvements
+- [ ] Add comprehensive test coverage
+- [ ] Implement proper database storage
+- [ ] Add CI/CD pipeline
+- [ ] Performance optimizations
+- [ ] Accessibility improvements
+- [ ] Mobile app development
 
 ## License
 
