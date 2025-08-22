@@ -130,6 +130,20 @@ Example variables can be found in the `.env.example` file:
 | `PORT` | Port for the API server (default: 3000) |
 | `NODE_ENV` | Environment (development, production) |
 
+## Documentation
+
+For comprehensive documentation, see the [docs folder](./docs/README.md).
+
+### TODO - Documentation Tasks
+
+- [ ] Complete detailed setup guides in [docs/getting-started.md](./docs/getting-started.md)
+- [ ] Document system architecture and design decisions in [docs/architecture.md](./docs/architecture.md)
+- [ ] Expand API documentation with all endpoints in [docs/api.md](./docs/api.md)
+- [ ] Create comprehensive frontend development guide in [docs/frontend.md](./docs/frontend.md)
+- [ ] Add deployment guides for various environments in [docs/deployment.md](./docs/deployment.md)
+- [ ] Establish contributing guidelines in [docs/contributing.md](./docs/contributing.md)
+- [ ] Maintain version history in [docs/changelog.md](./docs/changelog.md)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
