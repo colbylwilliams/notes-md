@@ -7,7 +7,7 @@ This guide covers the development workflow, coding standards, and best practices
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- npm or yarn
+- npm
 - Git
 - VS Code (recommended)
 

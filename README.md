@@ -144,16 +144,16 @@ For comprehensive documentation, please visit the [docs](docs/) directory:
 
 The following documentation areas need to be expanded:
 
-- [ ] Add comprehensive API authentication documentation
-- [ ] Create detailed troubleshooting guides
 - [ ] Add testing documentation and guidelines
-- [ ] Expand deployment guides for major cloud platforms (AWS, Azure, GCP)
 - [ ] Add contribution guidelines and code of conduct
-- [ ] Create architectural decision records (ADRs)
-- [ ] Add performance optimization guides
 - [ ] Create security best practices documentation
-- [ ] Add monitoring and observability guides
+- [ ] Add comprehensive API authentication documentation
+- [ ] Expand deployment guides for major cloud platforms (AWS, Azure, GCP)
 - [ ] Create user guides with screenshots and tutorials
+- [ ] Add performance optimization guides
+- [ ] Create detailed troubleshooting guides
+- [ ] Add monitoring and observability guides
+- [ ] Create architectural decision records (ADRs)
 
 ## License
 
