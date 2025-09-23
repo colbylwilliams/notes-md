@@ -26,20 +26,12 @@ This guide covers deploying Notes MD to different environments and platforms.
 
 ### Cloud Platform Deployment
 
-#### Vercel/Netlify (Frontend)
-**TODO**: Document frontend deployment to static hosting platforms.
-
-#### Heroku (Full Stack)
-**TODO**: Document full application deployment to Heroku.
-
-#### AWS
-**TODO**: Document AWS deployment options (EC2, Lambda, etc.).
-
-#### Azure
-**TODO**: Document Azure deployment options.
-
-#### Google Cloud Platform
-**TODO**: Document GCP deployment options.
+**TODO**: Document cloud platform deployment options including:
+- Static hosting platforms for frontend deployment
+- Full-stack hosting services
+- Infrastructure as a Service (IaaS) options
+- Platform as a Service (PaaS) solutions
+- Serverless deployment strategies
 
 ## Environment Configuration
 
