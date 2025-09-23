@@ -1,8 +1,14 @@
 # Notes MD
 
-
-
 A web application for taking and managing notes in Markdown format.
+
+## 📚 Documentation
+
+For comprehensive documentation, visit the [`/docs`](./docs/) folder:
+- [📖 Full Documentation](./docs/README.md) - Complete documentation index
+- [🚀 Getting Started](./docs/getting-started.md) - Development setup guide
+- [🔌 API Reference](./docs/api.md) - REST API documentation
+- [⚛️ Frontend Guide](./docs/frontend.md) - React components and architecture
 
 ## Features
 
