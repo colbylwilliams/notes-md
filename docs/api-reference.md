@@ -1,5 +1,7 @@
 # API Reference
 
+> **Note**: The Notes MD API is already implemented. This document is a placeholder for comprehensive API documentation.
+>
 > **TODO**: Provide comprehensive API endpoint documentation with examples
 
 ## Base URL
