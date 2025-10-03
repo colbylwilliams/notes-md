@@ -338,7 +338,7 @@ const validatedData = NoteSchema.parse(req.body);
 ```env
 PORT=3000
 NODE_ENV=development
-CORS_ORIGIN=http://localhost:5173
+CORS_ORIGIN=http://localhost:5173  # Use your frontend domain in production
 ```
 
 ### Configuration Management

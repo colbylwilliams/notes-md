@@ -260,14 +260,14 @@ interface NoteInput {
 ### Environment Variables (`.env`)
 
 ```
-VITE_API_URL=http://localhost:3000
+VITE_API_URL=http://localhost:3000  # Use your API domain in production
 VITE_ENABLE_DARK_MODE_BY_DEFAULT=false
 VITE_ENABLE_AUTOSAVE=true
 VITE_APP_TITLE=Notes MD
 VITE_AUTOSAVE_INTERVAL=2000
 ```
 
-**Note**: Only `VITE_` prefixed variables are exposed to client.
+**Note**: Only `VITE_` prefixed variables are exposed to client. Replace `localhost` with your actual API domain in production.
 
 ## Build & Deployment
 

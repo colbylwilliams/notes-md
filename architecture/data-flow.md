@@ -476,9 +476,11 @@ const debouncedSave = useDebouncedCallback(
   (id, content) => {
     notesService.updateNote(id, content);
   },
-  1000 // Wait 1 second after typing stops
+  1000 // Wait 1 second (1000ms) after typing stops
 );
 ```
+
+**Note**: The debounce interval can be configured via the `VITE_AUTOSAVE_INTERVAL` environment variable (default: 2000ms).
 
 ### Caching
 

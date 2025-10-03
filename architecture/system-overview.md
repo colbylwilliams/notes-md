@@ -75,6 +75,7 @@ Currently, the application uses **in-memory storage** for notes. This means:
 - Notes are stored in memory while the server is running
 - Data is lost when the server restarts
 - Suitable for development and demonstration purposes
+- Each server instance maintains its own separate data store (important for scaling)
 
 **Future Enhancement**: Could be extended to use persistent storage (database, file system, etc.)
 
