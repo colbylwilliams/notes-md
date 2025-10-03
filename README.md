@@ -28,6 +28,94 @@ A web application for taking and managing notes in Markdown format.
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
 
+## Architecture
+
+The following diagram illustrates the architecture of the Notes MD application:
+
+```mermaid
+graph TB
+    subgraph "Frontend - React Application"
+        App[App.tsx<br/>Main Application]
+        NoteList[NoteList Component<br/>Display notes list]
+        NoteEditor[NoteEditor Component<br/>Markdown editor]
+        NotePreview[NotePreview Component<br/>Rendered preview]
+        NotesService[NotesService<br/>Business logic]
+        LocalStorage[(localStorage<br/>Client-side persistence)]
+        
+        App --> NoteList
+        App --> NoteEditor
+        App --> NotePreview
+        App --> NotesService
+        NotesService --> LocalStorage
+        
+        NoteList -.->|onNoteSelect| App
+        NoteList -.->|onAddNote| App
+        NoteList -.->|onDeleteNote| App
+        NoteEditor -.->|onNoteChange| App
+    end
+    
+    subgraph "Backend - Express API"
+        ExpressApp[Express Server<br/>index.ts]
+        NotesRoutes[Notes Routes<br/>routes/notes.ts]
+        NotesController[Notes Controller<br/>controllers/notes.ts]
+        ErrorHandler[Error Handler<br/>middleware/errorHandler.ts]
+        InMemoryDB[(In-Memory Storage<br/>Notes array)]
+        
+        ExpressApp --> NotesRoutes
+        NotesRoutes --> NotesController
+        NotesController --> InMemoryDB
+        ExpressApp --> ErrorHandler
+    end
+    
+    subgraph "Data Models"
+        NoteModel[Note Interface<br/>id, title, content<br/>createdAt, updatedAt]
+    end
+    
+    App -.->|HTTP REST API<br/>Optional| ExpressApp
+    NotesService --> NoteModel
+    NotesController --> NoteModel
+    
+    User([User]) --> App
+    User -.->|API Requests| ExpressApp
+    
+    classDef frontend fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    classDef backend fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef storage fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef model fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    classDef user fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+    
+    class App,NoteList,NoteEditor,NotePreview,NotesService frontend
+    class ExpressApp,NotesRoutes,NotesController,ErrorHandler backend
+    class LocalStorage,InMemoryDB storage
+    class NoteModel model
+    class User user
+```
+
+### Architecture Overview
+
+**Frontend (React/TypeScript/Vite)**
+- **App Component**: Main application container that manages state and coordinates child components
+- **NoteList Component**: Displays the list of notes with add/delete functionality
+- **NoteEditor Component**: Markdown editor with automatic title extraction
+- **NotePreview Component**: Real-time markdown rendering using `@uiw/react-markdown-preview`
+- **NotesService**: Business logic layer for CRUD operations with localStorage persistence
+- **localStorage**: Client-side data persistence for notes
+
+**Backend (Express/TypeScript)**
+- **Express Server**: RESTful API server with CORS support
+- **Routes Layer**: Defines API endpoints (`GET`, `POST`, `PUT`, `DELETE` for `/api/notes`)
+- **Controller Layer**: Handles business logic for note operations
+- **Error Handler Middleware**: Centralized error handling
+- **In-Memory Storage**: Temporary note storage (can be replaced with a database)
+
+**Data Flow**
+- User interactions trigger events in components
+- Components communicate with App via callbacks
+- App uses NotesService for data operations
+- NotesService persists data to localStorage
+- API is available for programmatic access (optional integration)
+- Both frontend and backend share the same Note interface structure
+
 ## Getting Started
 
 ### Prerequisites
