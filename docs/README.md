@@ -72,7 +72,3 @@ Documentation contributions are welcome! Please follow these guidelines:
 2. Include code examples where applicable
 3. Update all language versions when making changes
 4. Test any code snippets before including them
-
----
-
-*Last updated: 2025*

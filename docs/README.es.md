@@ -72,7 +72,3 @@ Por ahora, por favor consulta:
 2. Incluye ejemplos de código donde sea aplicable
 3. Actualiza todas las versiones de idiomas al hacer cambios
 4. Prueba cualquier fragmento de código antes de incluirlo
-
----
-
-*Última actualización: 2025*
