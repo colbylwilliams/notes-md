@@ -7,19 +7,18 @@ Welcome to the Notes MD documentation! This section contains comprehensive guide
 This documentation is organized into the following sections:
 
 ### User Guide
-- **Getting Started** - Installation and setup instructions
-- **Usage Guide** - How to use Notes MD effectively
-- **Configuration** - Environment variables and configuration options
+- **[Getting Started](getting-started.md)** - Installation and setup instructions
+- **[User Guide](user-guide.md)** - How to use Notes MD effectively
+- **[Configuration](configuration.md)** - Environment variables and configuration options
 
 ### Developer Guide
-- **Architecture** - System architecture and design decisions
-- **API Reference** - Complete API endpoint documentation
-- **Contributing** - Guidelines for contributing to the project
-- **Development Setup** - Setting up your development environment
+- **[Architecture](architecture.md)** - System architecture and design decisions
+- **[API Reference](api-reference.md)** - Complete API endpoint documentation
+- **[Contributing](contributing.md)** - Guidelines for contributing to the project (includes development setup)
 
 ### Reference
-- **Troubleshooting** - Common issues and solutions
-- **FAQ** - Frequently asked questions
+- **[Troubleshooting](troubleshooting.md)** - Common issues and solutions
+- **[FAQ](faq.md)** - Frequently asked questions
 
 ## TODOs
 
