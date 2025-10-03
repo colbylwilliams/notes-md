@@ -16,8 +16,8 @@ For now, please refer to the [main README](../README.md) for installation and se
 
 ### Frontend Setup
 
-See the [main README](../README.md#frontend-installation) for frontend setup instructions.
+See the main README for frontend setup instructions - refer to the "Frontend Installation" section.
 
 ### API Setup
 
-See the [main README](../README.md#api-installation) for API setup instructions.
+See the main README for API setup instructions - refer to the "API Installation" section.
