@@ -47,5 +47,4 @@ Refer to [API README](../api/README.md) for detailed instructions.
 > **TODO**: Link to other documentation sections
 
 - [Architecture Overview](architecture.md)
-- [User Guide](user-guide.md)
 - [API Reference](api-reference.md)
