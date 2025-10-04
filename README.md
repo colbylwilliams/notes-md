@@ -28,6 +28,8 @@ A web application for taking and managing notes in Markdown format.
 - `/web` - Frontend application (React, TypeScript, Vite)
 - `/api` - Backend REST API (Express, TypeScript)
 
+For a detailed architecture overview with diagrams, see [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ## Getting Started
 
 ### Prerequisites
