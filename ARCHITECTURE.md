@@ -75,7 +75,7 @@ graph TB
     
     UI -.Optional API Integration.-> RT
     
-    Note1[Note: The frontend currently uses LocalStorage for persistence.<br/>API integration is optional and not yet implemented.]
+    Note1[Note: The frontend currently uses LocalStorage for persistence.\nAPI integration is optional and not yet implemented.]
     
     style UI fill:#61dafb
     style Note1 fill:#fff9c4
@@ -276,7 +276,7 @@ graph TB
 
 ### Design Patterns
 
-- **Module Pattern**: NotesService is exported as a single instance to ensure consistent state across the application
+- **Singleton (ES6 Module)**: NotesService is exported as a single instance to ensure consistent state across the application. The class is instantiated once and exported directly from the module.
 - **MVC**: API follows Model-View-Controller pattern
 - **Component Composition**: React components are composed hierarchically
 - **Unidirectional Data Flow**: Props down, events up pattern
