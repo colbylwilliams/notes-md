@@ -4,6 +4,8 @@ This document provides an overview of the Notes MD application architecture, inc
 
 ## System Architecture Diagram
 
+The following diagram provides a high-level overview of the Notes MD application architecture. It shows both the frontend React application and the optional backend Express API, along with their respective components, services, and data storage mechanisms.
+
 ```mermaid
 graph TB
     subgraph "Client Browser"
@@ -71,9 +73,12 @@ graph TB
     RT --> CORS
     RT --> EX
     
-    UI -.Optional.-> RT
+    UI -.Optional API Integration.-> RT
+    
+    Note1[Note: The frontend currently uses LocalStorage for persistence.<br/>API integration is optional and not yet implemented.]
     
     style UI fill:#61dafb
+    style Note1 fill:#fff9c4
     style NS fill:#4caf50
     style LS fill:#ff9800
     style RT fill:#90caf9
@@ -271,7 +276,7 @@ graph TB
 
 ### Design Patterns
 
-- **Singleton**: NotesService uses singleton pattern
+- **Module Pattern**: NotesService is exported as a single instance to ensure consistent state across the application
 - **MVC**: API follows Model-View-Controller pattern
 - **Component Composition**: React components are composed hierarchically
 - **Unidirectional Data Flow**: Props down, events up pattern
