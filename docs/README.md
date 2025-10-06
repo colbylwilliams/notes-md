@@ -71,4 +71,4 @@ If you'd like to contribute to the documentation, please:
 
 📝 **Status**: Initial setup - Documentation structure in progress
 
-Last updated: 2025
+Last updated: October 2025
